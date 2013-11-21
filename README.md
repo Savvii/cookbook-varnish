@@ -26,6 +26,8 @@ Attributes
 * `node['varnish']['nfiles']` -  Open files (131072)
 * `node['varnish']['memlock']` -  Maxiumum locked memory size for shared memory log (82000)
 * `node['varnish']['instance']` - Default varnish instance name (node['fqdn'])
+* `node['varnish']['listen_local_ipaddress']` - Set to `true` to
+  override use `node['ipaddress']` for listen address instead of `node['varnish']['listen_address']`
 * `node['varnish']['listen_address']` -  Default address to bind to. Blank address (the default) means all IPv4 and IPv6 interfaces, otherwise specify a host name, an IPv4 dotted quad, or an IPv6 address in brackets
 * `node['varnish']['listen_port']` - Default port to listen on (6081)
 * `node['varnish']['vcl_conf']` - Main configuration file. (default.vcl)

@@ -13,6 +13,7 @@ default['varnish']['start'] = 'yes'
 default['varnish']['nfiles'] = 131072
 default['varnish']['memlock'] = 82000
 default['varnish']['instance'] = node['hostname']
+default['varnish']['listen_local_ipaddress'] = false
 default['varnish']['listen_address'] = ''
 default['varnish']['listen_port'] = 6081
 default['varnish']['vcl_conf'] = 'default.vcl'
